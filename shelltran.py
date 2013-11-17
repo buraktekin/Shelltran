@@ -3,7 +3,7 @@
 #   Created: 17 November 2013
 
 #import to be able to use command-line
-import urllib2, lxml.html, codecs
+import urllib2, lxml.html
 import sys
 	
 ''' 
@@ -50,7 +50,7 @@ generate_link_for_word = "http://m.tureng.com/search/{}".format(sys.argv[1])
 
 #if word is made up of two seperated word then reform the string structure.
 if len(sys.argv) >= 2:
-	for count in range(2,len(sys.argv)):
+	for count in range(2, len(sys.argv)):
 		generate_link_for_word += "%20" + sys.argv[count] #Search query is reformed here.
 	content = urllib2.urlopen(generate_link_for_word).read().decode("utf8",'replace') #The greatest challenge! Encoding problem achieved here when contents are reading.
 	
