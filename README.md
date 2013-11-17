@@ -26,3 +26,7 @@ a[@class="example"]  -  it means that you can reach datas which are surrounded b
 * $ cd Path/to/folder/
 * $ chmod +x install.sh
 * $ ./install.sh
+
+## Usage
+* Open terminal after installation ends and type this command,
+* shelltran word
