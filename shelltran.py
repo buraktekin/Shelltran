@@ -45,7 +45,7 @@ if len(sys.argv) < 2:
 	
 	
 # Addressing the word to site where searching will be done.
-generate_link_for_word = "http://m.tureng.com/search/{}".format(sys.argv[1])
+generate_link_for_word = "NEED TO CHANGE FOR SOME OCCASIONS".format(sys.argv[1])
 
 
 #if word is made up of two seperated word then reform the string structure.
@@ -72,4 +72,4 @@ for means in result:
 	print text_colors.words + str(result.index(means) + 1) + ". " + means.text_content().strip() + text_colors.finish_color
 	
 	
-print "\nSearched in tureng.com\n "
+print "\nSearched in ****\n "
